@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>G&#39;s Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-27T16:55:10.140Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>MeachelG</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/03/28/hello-world/"/>
+    <id>http://yoursite.com/2018/03/28/hello-world/</id>
+    <published>2018-03-27T16:55:10.148Z</published>
+    <updated>2018-03-27T16:55:10.140Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Hi-这是我的第一篇博客"><a href="#Hi-这是我的第一篇博客" class="headerlink" title="Hi~这是我的第一篇博客"></a>Hi~这是我的第一篇博客</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Hi-这是我的第一篇博客&quot;&gt;&lt;a href=&quot;#Hi-这是我的第一篇博客&quot; class=&quot;headerlink&quot; title=&quot;Hi~这是我的第一篇博客&quot;&gt;&lt;/a&gt;Hi~这是我的第一篇博客&lt;/h3&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
