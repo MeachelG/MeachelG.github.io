@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/04/02/个人博客的搭建/changetheme.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/02/个人博客的搭建/settings.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/02/个人博客的搭建/configgitre.png">
-<meta property="og:updated_time" content="2018-04-14T13:56:35.908Z">
+<meta property="og:updated_time" content="2018-04-14T13:58:49.720Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人博客的搭建">
 <meta name="twitter:description" content="基于Gitpage和Hexo的个人博客搭建（Linux）&amp;emsp;&amp;emsp;这篇文章是我在历经几次博客搭建之后自己总结出来的一些个人经验。&amp;emsp;&amp;emsp;我的博客是使用 Github + Hexo 来完成的，这也是目前很多人都会选择的主流方法。当然也有其他很多人选择其他的博客搭建方法，比如使用现成网站提供的博客页面，再比如从零开始一步步搭建自己的网站……当然我这种又小白又想展现一点技术">
@@ -332,11 +332,12 @@
 <ul>
 <li><strong>本地Hexo的工作以及文件配置</strong></li>
 <li><strong>Github 的申请与准备</strong></li>
-<li><strong>从本地向Git端的部署</strong><br><br><br><br><h4 id="一、本地Hexo的工作以及文件配置"><a href="#一、本地Hexo的工作以及文件配置" class="headerlink" title="一、本地Hexo的工作以及文件配置"></a>一、本地Hexo的工作以及文件配置</h4>Hexo是一个集简单、快速、强大于一体的基于 Github Pages 的博客框架，支持Markdown格式，有很多的插件和主题。<br><br><blockquote>
+<li><strong>从本地向Git端的部署</strong><br><br><br><br></li>
+</ul>
+<h4 id="一、本地Hexo的工作以及文件配置"><a href="#一、本地Hexo的工作以及文件配置" class="headerlink" title="一、本地Hexo的工作以及文件配置"></a>一、本地Hexo的工作以及文件配置</h4><p>Hexo是一个集简单、快速、强大于一体的基于 Github Pages 的博客框架，支持Markdown格式，有很多的插件和主题。<br><br></p>
+<blockquote>
 <p>总的来说，我们对于博客的操作，就是我们在本地创建文件和文档，然后上传到网络端，网络端随着我们上传的更新，来进行更新。而Hexo在其中的作用，就是每当我们要对博客进行更新的时候，就将写好的文章或者其他的什么东西，交给Hexo，让它来将改更新进行统一的管理，然后上传到 github ，这样，我们在网络上的博客内容就会随之更新。<br><br></p>
 </blockquote>
-</li>
-</ul>
 <p>Hexo需要依赖 <strong>Node.js</strong> 环境，所以我们首先需要下载安装 <strong>Node.js</strong> 以及 <strong>npm</strong></p>
 <pre><code>sudo apt-get install nodejs
 sudo apt-get install npm    //nodejs的包管理工具
