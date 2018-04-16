@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/04/02/个人博客的搭建/changetheme.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/02/个人博客的搭建/settings.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/02/个人博客的搭建/configgitre.png">
-<meta property="og:updated_time" content="2018-04-14T13:58:49.720Z">
+<meta property="og:updated_time" content="2018-04-16T12:55:38.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人博客的搭建">
 <meta name="twitter:description" content="基于Gitpage和Hexo的个人博客搭建（Linux）&amp;emsp;&amp;emsp;这篇文章是我在历经几次博客搭建之后自己总结出来的一些个人经验。&amp;emsp;&amp;emsp;我的博客是使用 Github + Hexo 来完成的，这也是目前很多人都会选择的主流方法。当然也有其他很多人选择其他的博客搭建方法，比如使用现成网站提供的博客页面，再比如从零开始一步步搭建自己的网站……当然我这种又小白又想展现一点技术">
@@ -344,9 +344,11 @@ sudo apt-get install npm    //nodejs的包管理工具
 </code></pre><p><br><br>然后输入以下命令查看是否安装成功，安装成功会显示出版本号</p>
 <pre><code>node -v
 npm -v
-</code></pre><p><br><br>接着，下载安装 <strong>Git</strong> </p>
+</code></pre><p><br><br>接着，下载安装配置 <strong>Git</strong> </p>
 <pre><code>sudo apt-get install git
-</code></pre><p> <br><br>Git 安装完成之后就开始安装配置我们的正主—— <strong>Hexo</strong></p>
+git config --global user.name &quot;yourname&quot;              //设置你的名字
+git config --global user.email &quot;yourname@example.com&quot;   //设置你的邮箱
+</code></pre><p> <br><br>Git 安装配置完成之后就开始安装配置我们的正主—— <strong>Hexo</strong></p>
 <pre><code>npm install -g hexo-cli   //-g的意思是全局安装Hexo
 mkdir blog                //创建一个目录用来存放博客文件
 hexo init blog            //将我们的博客目录初始化
@@ -398,7 +400,9 @@ hexo s
 <p>&emsp;&emsp;这一步完成之后，我们需要安装一个依赖使我们的博客能正常推送到 git</p>
 <pre><code>npm install hexo-deployer-git --save
 </code></pre><p> 安装完成后，我们输入</p>
-<pre><code>hexo d
+<pre><code>hexo clean   //这一步是为了产生不必要的错误，所以清理一下缓存
+hexo g       //生成静态文件
+hexo d       //向远端推送
 </code></pre><p>完成部署<br><br><br><br><br>部署完成以后，我们就可以打开 <a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 来查看你的博客啦！</p>
 
       
